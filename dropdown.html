@@ -1,1 +1,144 @@
 
+
+<div class="dropdown2">
+    <button onclick="toggleDropdown2()" class="dropbtn2"><img src="https://myaccentway.com/wp-content/uploads/2023/04/enrollnow-btn.png" alt="icon"></button>
+    <div id="myDropdown2" class="dropdown-content2">
+      <a href="https://myaccentway.com/product/american-pronunciation-consultation/"><img src="https://myaccentway.com/wp-content/uploads/2023/04/dropdown-item.svg" alt="icon"><span style="padding-left:25px" class="plan2">1-on-1 Learning</span></a>
+ 
+      <a href="https://myaccentway.com/product/american-single-sound-learning/"><img src="https://myaccentway.com/wp-content/uploads/2023/04/dropdown-item.svg" alt="icon"><span style="padding-left:25px" class="plan2">1 Session Learning</span></a>
+    </div>
+  </div>
+  
+
+  <style>
+.dropdown2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 315px;
+
+}
+
+.dropdown2 button:hover{
+    background-color:  #ffffff00 !important;
+}
+
+.dropbtn2 {
+
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+
+.dropdown-content2 {
+  display: none;
+  position: relative;
+  z-index: 1;
+  top: 10px;    
+  background-color: white;
+  box-shadow: 0px 7px 20px rgba(167, 167, 167, 0.15);
+border-radius: 20px;
+
+  animation-name: slideIn;
+  animation-duration: 0.5s;
+  padding:40px 45px 40px 45px;
+
+
+  
+}
+
+.plan2
+{
+    font-family: 'Butler';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+text-decoration-line: underline;
+
+color: #616161 !important;
+}
+
+
+.dropdown-conten2:before {
+    z-index: -1;
+    content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid transparent; /*2*/
+  background: linear-gradient(180deg, #F7DFA0 69.79%, #AF3C22 100%) border-box; /*3*/
+  -webkit-mask: /*4*/
+     linear-gradient(#fff 0 0) padding-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; /*5'*/
+          mask-composite: exclude; /*5*/
+          border-radius: 20px;
+  
+}
+
+
+
+
+
+
+  
+  
+
+
+
+
+.dropdown-content2 a {
+  color: black;
+padding:20px 0px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+button.dropbtn:focus{
+    background-color:#fff;
+}
+
+button.dropbtn2:focus{
+    background-color:#fff;
+}
+
+
+
+
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+    </style>
+
+
+
+<script>
+
+    function toggleDropdown2() {
+  var dropdown2 = document.getElementById("myDropdown2");
+  if (dropdown2.style.display === "block") {
+    dropdown2.style.display = "none";
+  } else {
+    dropdown2.style.display = "block";
+  }
+}
+
+</script>
